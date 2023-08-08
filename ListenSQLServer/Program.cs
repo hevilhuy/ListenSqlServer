@@ -25,6 +25,6 @@ static void Dependency_OnChange(object sender, SqlNotificationEventArgs e)
     if (sender is SqlDependency dependency)
     {
         dependency.OnChange -= Dependency_OnChange;
-        RegisterOnChangeEvent(connectionString) ;
+        RegisterOnChangeEvent(connectionString);
     }
 }
